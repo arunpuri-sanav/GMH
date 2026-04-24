@@ -2,6 +2,9 @@
 
 Rush Hour Tycoon is a map-based simulation game.
 
+![Rush Hour Tycoon Preview](./img/GMH1.png)
+![Rush Hour Tycoon Preview 2](./img/GMH2.png)
+
 In simple terms, this project shows:
 
 - how delivery drivers move through city traffic,
