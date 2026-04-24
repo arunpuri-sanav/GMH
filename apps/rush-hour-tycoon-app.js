@@ -828,6 +828,14 @@ function SplashFixture() {
         <div className="text-slate-200">- Delivery points: 120 + (level x 35).</div>
         <div className="text-slate-200">- Performance audit tracks time, fuel/carbon savings, and OPH uplift.</div>
       </div>
+
+      <div className="mt-3 rounded-lg border border-white/20 bg-black/30 p-3 text-xs">
+        <div className="mb-1 text-slate-300">APIs Used</div>
+        <div className="text-slate-200">- Grab Style/Tiles: renders the city map.</div>
+        <div className="text-slate-200">- Grab Directions: builds road routes for driver movement and Grab vs Legacy compare.</div>
+        <div className="text-slate-200">- Grab Matrix: computes multi-point ETA data and level-5 diagnostics.</div>
+        <div className="text-slate-200">- Grab Places Nearby: snaps generated order points to realistic nearby POIs.</div>
+      </div>
     </aside>
   `;
 }
