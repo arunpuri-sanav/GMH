@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grab Maps Basic App</title>
+    <link
+      href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="appSwitcherHost"></div>
+    <div id="map"></div>
+
+    <aside id="glassPanel" class="glass-panel" aria-label="Showcase controls">
+      <h1>Grab Maps Showcase</h1>
+
+      <div class="divider"></div>
+
+      <h2>Live Endpoint Actions</h2>
+      <label for="citySelect">City / Mode Profile</label>
+      <select id="citySelect">
+        <option value="SGP">Singapore (Car)</option>
+        <option value="JAKARTA">Jakarta (Motorcycle)</option>
+        <option value="BANGKOK">Bangkok (Motorcycle)</option>
+      </select>
+
+      <label for="keywordInput">Keyword (ranked flow only)</label>
+      <input id="keywordInput" type="text" value="Luckin" />
+      <label for="timeSlider">Time of Day: <span id="timeValueLabel">12:00</span></label>
+      <input id="timeSlider" type="range" min="0" max="23" value="12" step="1" />
+
+      <button id="searchBtn">Search &amp; rank</button>
+      <button id="nearbyBtn">Nearby (no rank)</button>
+      <button id="routeBtn">Get Directions to Selected</button>
+      <button id="clearBtn" class="danger">Clear Markers & Route</button>
+
+      <div id="results" class="results"></div>
+
+      <p id="status" class="status">Loading map…</p>
+    </aside>
+
+    <section id="networkDock" class="network-dock" aria-label="Network log">
+      <div class="network-dock-header">
+        <strong>Network Log</strong>
+        <div class="network-actions">
+          <button id="dockHeightBtn" type="button" title="Toggle height">⬆</button>
+          <button id="dockSideBtn" type="button" title="Collapse to right">➡</button>
+          <button id="exportNetworkBtn" type="button" title="Export logs">Export JSON</button>
+          <button id="togglePreviewBtn" type="button">Show Preview</button>
+        </div>
+      </div>
+      <div id="networkLog" class="network-log"></div>
+      <div id="responsePreview" class="response-preview hidden"></div>
+    </section>
+
+    <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+    <script src="./config.js"></script>
+    <script type="module" src="./showcase-app.js"></script>
+  </body>
+</html>

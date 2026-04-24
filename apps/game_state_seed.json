@@ -1,0 +1,37 @@
+{
+  "game_session": "hackathon_demo_001",
+  "city": "jakarta_sudirman",
+  "difficulty": 1,
+  "drivers": [
+    {
+      "id": "DRV_01",
+      "type": "MOTORCYCLE",
+      "battery_level": 88,
+      "current_loc": { "lat": -6.2240, "lng": 106.8080 },
+      "status": "IDLE"
+    },
+    {
+      "id": "DRV_02",
+      "type": "EV_BIKE",
+      "battery_level": 45,
+      "current_loc": { "lat": -6.2210, "lng": 106.8100 },
+      "status": "IDLE"
+    }
+  ],
+  "active_orders": [
+    {
+      "order_id": "ORD_99",
+      "pickup": {
+        "name": "Kopi Kenangan - Pacific Place",
+        "loc": { "lat": -6.2247, "lng": 106.8098 },
+        "entrance_point": { "lat": -6.2248, "lng": 106.8100 }
+      },
+      "dropoff": {
+        "name": "Apartemen Sudirman Mansion",
+        "loc": { "lat": -6.2220, "lng": 106.8060 }
+      },
+      "value": 15.50,
+      "urgency": "high"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+window.APP_CONFIG = {
+  GRAB_MAPS_API_KEY: "bm_1776995181_e1aeFQ0PY5R7Vz3vVeLbRF0oTgGblccy",
+};

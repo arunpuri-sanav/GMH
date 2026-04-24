@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GrabVector</title>
+    <link
+      href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div id="appSwitcherHost"></div>
+    <div id="map"></div>
+
+    <aside class="ggp-panel" aria-label="GrabVector controls">
+      <h1>GrabVector</h1>
+      <p class="ggp-subtitle">Enterprise Expansion Suite</p>
+
+      <div class="ggp-row">
+        <label for="ggpCitySelect">City</label>
+        <select id="ggpCitySelect">
+          <option value="SGP">Singapore</option>
+          <option value="JAKARTA">Jakarta</option>
+          <option value="BANGKOK">Bangkok</option>
+        </select>
+      </div>
+
+      <div class="ggp-row">
+        <label for="ggpBrandInput">Brand Name</label>
+        <input id="ggpBrandInput" type="text" value="McDonald's" />
+      </div>
+
+      <div class="ggp-row">
+        <label for="ggpDeparture">Departure Time</label>
+        <input id="ggpDeparture" type="range" min="0" max="23" value="12" step="1" />
+        <div class="ggp-time-label" id="ggpDepartureLabel">12:00</div>
+      </div>
+
+      <div class="ggp-btn-row">
+        <button id="ggpLoadNetworkBtn" class="primary">Map Current Assets</button>
+        <button id="ggpComputeDemandBtn">Recompute Demand Layer</button>
+      </div>
+
+      <div class="ggp-legend">
+        <strong>Bivariate Legend</strong>
+        <p>X: Travel time to nearest branch</p>
+        <p>Y: Demand density</p>
+        <div class="ggp-bivariate-grid">
+          <span data-color="low-low">Low/Low</span>
+          <span data-color="high-low">High Time</span>
+          <span data-color="low-high">High Demand</span>
+          <span data-color="high-high">Winner Zone</span>
+        </div>
+      </div>
+
+      <section class="ggp-metrics">
+        <h2>Site Viability Report</h2>
+        <p id="ggpMetricNetNew">Net Households Reached: -</p>
+        <p id="ggpMetricCannibalization">Cannibalization Risk: -</p>
+        <p id="ggpMetricEta">ETA Improvement: -</p>
+        <p id="ggpMetricScore">Site Score: -</p>
+      </section>
+
+      <button id="ggpExportBtn">Export Pitch Deck Summary</button>
+      <p id="ggpStatus" class="status">Loading map...</p>
+    </aside>
+
+    <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+    <script src="../config.js"></script>
+    <script type="module" src="./grab-vector-app.js"></script>
+  </body>
+</html>

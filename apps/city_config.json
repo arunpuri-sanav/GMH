@@ -1,0 +1,40 @@
+{
+  "cities": {
+    "jakarta_sudirman": {
+      "name": "Jakarta: The Sudirman Scramble",
+      "center": { "lat": -6.2247, "lng": 106.8077 },
+      "bounds": {
+        "minLat": -6.2350,
+        "maxLat": -6.2100,
+        "minLng": 106.7950,
+        "maxLng": 106.8250
+      },
+      "level_modifiers": { "traffic_density": 0.9, "alleyway_logic": true, "flood_risk": "high" },
+      "anchor_pois": ["Pacific Place", "Senayan City", "SCBD Lot 8"]
+    },
+    "singapore_orchard": {
+      "name": "Singapore: The Orchard Optimizer",
+      "center": { "lat": 1.3026, "lng": 103.8352 },
+      "bounds": {
+        "minLat": 1.2950,
+        "maxLat": 1.3150,
+        "minLng": 103.8250,
+        "maxLng": 103.8550
+      },
+      "level_modifiers": { "erp_zones": true, "ev_adoption": 0.8, "indoor_checkpoints": true },
+      "anchor_pois": ["ION Orchard", "Ngee Ann City", "Lucky Plaza"]
+    },
+    "bangkok_sukhumvit": {
+      "name": "Bangkok: Sukhumvit Surge",
+      "center": { "lat": 13.7313, "lng": 100.5698 },
+      "bounds": {
+        "minLat": 13.7200,
+        "maxLat": 13.7500,
+        "minLng": 100.5500,
+        "maxLng": 100.5900
+      },
+      "level_modifiers": { "motorcycle_lanes": true, "u_turn_penalty": 0.4, "tourist_hotspots": 0.7 },
+      "anchor_pois": ["EmQuartier", "Terminal 21", "Soi Cowboy"]
+    }
+  }
+}
