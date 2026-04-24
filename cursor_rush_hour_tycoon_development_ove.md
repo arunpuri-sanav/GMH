@@ -297,7 +297,7 @@ If you want next, I can split this large app module into `mission-control-ui.js`
 Create a component 'PerformanceAudit.jsx':
 - This tracks the delta between 'Legacy Car Routing' and 'Grab Motorcycle Routing'.
 - Calculate: (Total Time Saved), (Fuel/Carbon Saved), and (Orders Per Hour Increase).
-- At the end of a game session, generate a 'Business Case' modal that says: "Using GrabMaps saved your fleet $X,XXX per month compared to standard mapping."
+- At the end of a game session, generate a 'Business Case' modal that says: "Using GrabMaps saved your fleet $X,XXX per month compared to standard mapping/
 
 ---
 
